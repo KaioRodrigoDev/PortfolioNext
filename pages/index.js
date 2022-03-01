@@ -1,23 +1,45 @@
-import Head from 'next/head'
-import Link from 'next/link'
-
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 export default function Home() {
   return (
     <body>
       <div>
-        <Head>
-          <h1>Create Next App</h1>
-        </Head>
-
         <main className="main">
-          <h1>Kaio Rodrigo</h1>
-          <h3>Programador Web e Mobile</h3>
-          <br />
-          <p id="resume">
-            Sou desenvolvedor de web e mobile focado no front-end. Tenho 18 anos
-            e estudo programação a 3 anos. Novos desafios me permitem aprender
-            cada vez mais, e trabalho em grupo nunca é demais.
-          </p>
+          <div className="NavHeader">
+            <div>
+              <h2 id="name1">
+                Olá, meu nome é <span id="name"> Kaio Rodrigo</span>
+              </h2>
+              <h4>Programador Front-end Junior</h4>
+              <p id="resume">
+                Eu programo para desenvolver soluções, onde a experiencia do
+                usuario é completamente planjada e arquitetada para a melhor
+                usabilidade e aconchego
+              </p>
+              <p id="resume">Redes Sociais:</p>
+              <div class="headerIcon">
+                <a
+                  href="https://www.linkedin.com/in/kaio-rodrigo-8392a421a/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin">In.</i>
+                </a>
+                <a href="https://github.com/KaioRodrigoDev" target="_blank">
+                  <i class="fab fa-github">In.</i>
+                </a>
+                <a href="https://instagram.com/kaio_dev" target="_blank">
+                  <i class="fab fa-instagram">In.</i>
+                </a>
+              </div>
+              <br />
+            </div>
+            <img
+              className="Perfil_photo"
+              src="https://avatars.githubusercontent.com/u/79218424?v=4"
+              width="20%"
+              height="20%"
+              alt="Perfil_photo"
+            />
+          </div>
           <br />
           <a
             class="btn btnPrimary"
@@ -26,13 +48,17 @@ export default function Home() {
           >
             Curriculum
           </a>
-          <Link class="btn btnSecont" href="/projects" target="blank">
+          <a class="btn btnSecont" href="/projects">
             Projetos
-          </Link>
-
+          </a>
           <hr class="linha" />
           <h2 class="ido">Sobre mim</h2>
           <br />
+          <p>
+            Sou desenvolvedor de web e mobile focado no front-end. Tenho 18 anos
+            e estudo programação a 3 anos. Novos desafios me permitem aprender
+            cada vez mais, e trabalho em grupo nunca é demais.
+          </p>
           <p>
             Possuo 1 ano de experiencia desenvolvendo sites e apps para várias
             empresas e clientes. Abaixo há um pequeno resumo sobre minhas
@@ -42,7 +68,6 @@ export default function Home() {
           <br />
           <section>
             <div class="boxes">
-              <span class="fab fa-php tec"></span>
               <h3>PHP</h3>
               <br />
               <p>
@@ -51,7 +76,6 @@ export default function Home() {
               </p>
             </div>
             <div class="boxes">
-              <span class="fab fa-js tec"></span>
               <h3>JavaScript</h3>
               <br />
               <p>
@@ -60,7 +84,6 @@ export default function Home() {
               </p>
             </div>
             <div class="boxes">
-              <span class="fab fa-react tec"></span>
               <h3>React</h3>
               <br />
               <p>
@@ -69,8 +92,6 @@ export default function Home() {
               </p>
             </div>
             <div class="boxes">
-              <span class="fab fa-html5 tec"></span>
-              <span class="fab fa-css3 tec"></span>
               <h3>HTML e CSS</h3>
               <br />
               <p>

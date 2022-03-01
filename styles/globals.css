@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Fredoka&display=swap');
+
+:root {
+  --cor-principal: #ff014e;
+  --cor-secundaria: #ddd;
+  --cor-background-main: #070707;
+  --cor-background-body: #121212;
+  --cor-background-projects: #121212;
+}
+
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   box-sizing: border-box;
-  color: aliceblue;
+  color: #ddd;
 }
 .links {
   display: flex;
@@ -25,6 +35,9 @@
 .name {
   padding-bottom: 1rem;
 }
+.headerIcon {
+  padding-top: 10px;
+}
 .headerIcon a,
 .links a {
   text-decoration: none;
@@ -40,9 +53,9 @@
   font-size: 20px;
 }
 .headerIcon a i {
-  background-color: #54b689;
+  background-color: #212428;
   padding: 12px;
-  border-radius: 100%;
+  border-radius: 10px;
 }
 .headerBar {
   display: flex;
@@ -64,14 +77,15 @@ header {
   overflow-y: auto;
 }
 body {
-  background-color: #111821;
+  background-color: #131313;
 }
 main {
-  margin-left: 20%;
-  background-color: #111821;
+  background-color: var(--cor-background-main);
 }
 .main {
-  padding: 4rem 6rem;
+  padding: 4rem 4rem;
+  border: #ddd 1px solid;
+  margin: 5%;
 }
 .btnPrimary {
   cursor: pointer;
@@ -110,6 +124,7 @@ section {
 #resume {
   width: 65%;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 .ido {
   padding-top: 10%;
@@ -125,29 +140,31 @@ section {
 
 .projects {
   width: 30%;
-  height: 40vh;
+  height: 25vh;
   padding: 10px;
   border: #fff solid 1px;
-  background-color: #1e2a3a;
+  background-color: #121212;
   border-radius: 10px;
   margin: 5px;
 }
 
 .projectsList {
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .projectTitle {
-  font-size: 23px;
-  color: #54b689;
+  font-size: 25px;
+  color: var(--cor-secundaria);
   text-decoration: none;
 }
 .projectLang {
-  font-size: 15px;
-  color: #3e9b6f;
-  border: #3e9b6f 1px solid;
+  font-size: 12px;
+  color: #ff014e;
+  border: #ff014e 1px solid;
   border-radius: 10px;
   width: max-content;
   padding: 0px 7px 0px 7px;
@@ -156,4 +173,19 @@ section {
 .projectDesc {
   padding-top: 10px;
   padding-left: 5px;
+}
+
+main div.NavHeader {
+  display: flex;
+}
+.Perfil_photo {
+  background-color: #fff;
+  border-radius: 100%;
+}
+#name1 {
+  font-size: 40px;
+}
+#name {
+  color: #ff014e;
+  font-size: 40px;
 }

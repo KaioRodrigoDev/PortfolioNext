@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 export async function getStaticProps() {
   const data = await fetch('https://api.github.com/users/KaioRodrigoDev/repos')
   const projects = await data.json()
