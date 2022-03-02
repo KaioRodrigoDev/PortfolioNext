@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Fredoka&display=swap');
 
 :root {
-  --cor-principal: #ff014e;
+  --cor-principal: #ff002b;
   --cor-secundaria: #ddd;
   --cor-background-main: #070707;
   --cor-background-body: #121212;
@@ -35,9 +35,22 @@
 }
 .headerIcon a i {
   background-color: var(--cor-background-icon);
-  padding: 12px;
+  padding: 10px;
   border-radius: 10px;
   transition: 0.8s;
+}
+
+.headerIcon a span {
+  padding: 10px;
+  padding-bottom: 6px;
+  background-color: var(--cor-background-icon);
+  align-items: center;
+  transition: 0.8s;
+  border-radius: 10px;
+}
+.headerIcon a span:hover {
+  background-color: var(--cor-principal);
+  box-shadow: 0 0 1em var(--cor-principal);
 }
 
 body {
