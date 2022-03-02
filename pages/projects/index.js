@@ -11,7 +11,7 @@ export default function Project({ projects }) {
   return (
     <>
       <main className="main">
-        <h1>Projetos</h1>
+        <h1 className="title titleProjects">Projetos</h1>
         <div className="projectsList">
           {projects.map(project => (
             <div className="projects">
@@ -26,6 +26,11 @@ export default function Project({ projects }) {
               <p className="projectDesc">{project.description}</p>
             </div>
           ))}
+        </div>
+        <div className="btnBack">
+          <a className="btnPrimary" href="/">
+            Voltar
+          </a>
         </div>
       </main>
     </>

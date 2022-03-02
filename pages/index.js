@@ -7,7 +7,7 @@ export default function Home() {
           <div className="NavHeader">
             <div>
               <h2 id="name1">
-                Olá, meu nome é <span id="name"> Kaio Rodrigo</span>
+                Olá, meu nome é <span className="title"> Kaio Rodrigo</span>
               </h2>
               <h4>Programador Front-end Junior</h4>
               <p id="resume">
@@ -52,7 +52,7 @@ export default function Home() {
             Projetos
           </a>
           <hr class="linha" />
-          <h2 class="ido">Sobre mim</h2>
+          <h2 class="ido title">Sobre mim</h2>
           <br />
           <p>
             Sou desenvolvedor de web e mobile focado no front-end. Tenho 18 anos
@@ -68,7 +68,7 @@ export default function Home() {
           <br />
           <section>
             <div class="boxes">
-              <h3>PHP</h3>
+              <h3 className="title">PHP</h3>
               <br />
               <p>
                 Utilizo o PHP no framework Laravel, utilizado para
@@ -76,7 +76,7 @@ export default function Home() {
               </p>
             </div>
             <div class="boxes">
-              <h3>JavaScript</h3>
+              <h3 className="title">JavaScript</h3>
               <br />
               <p>
                 JS é uma das três principais tecnologias da World Wide Web,
@@ -84,7 +84,7 @@ export default function Home() {
               </p>
             </div>
             <div class="boxes">
-              <h3>React</h3>
+              <h3 className="title">React</h3>
               <br />
               <p>
                 O React é utilizado para tanto desenvolvimento Web quanto
@@ -92,7 +92,7 @@ export default function Home() {
               </p>
             </div>
             <div class="boxes">
-              <h3>HTML e CSS</h3>
+              <h3 className="title">HTML e CSS</h3>
               <br />
               <p>
                 HTML e CSS são a base para desenvolvimento web, no qual sendo
