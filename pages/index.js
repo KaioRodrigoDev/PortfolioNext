@@ -1,9 +1,10 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
 import {
   AiOutlineInstagram,
   AiFillGithub,
   AiOutlineLinkedin
 } from 'react-icons/ai'
+
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
                 usabilidade e aconchego
               </p>
               <p id="resume">Redes Sociais:</p>
-              <div class="headerIcon">
+              <div className="headerIcon">
                 <a
                   href="https://www.linkedin.com/in/kaio-rodrigo-8392a421a/"
                   target="_blank"
@@ -61,9 +62,9 @@ export default function Home() {
           >
             Curriculum
           </a>
-          <a className="btn btnSecont" href="/projects">
+          <Link className="btn btnSecont" href="/projects">
             Projetos
-          </a>
+          </Link>
           <hr className="linha" />
           <h2 className="ido title">Sobre mim</h2>
           <br />
