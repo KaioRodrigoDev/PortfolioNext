@@ -6,7 +6,7 @@ export async function getStaticProps() {
     props: { projects }
   }
 }
-
+import Link from 'next/link'
 export default function Project({ projects }) {
   return (
     <>
@@ -15,13 +15,13 @@ export default function Project({ projects }) {
         <div className="projectsList">
           {projects.map(project => (
             <div className="projects">
-              <a
+              <Link
                 className="projectTitle"
                 href={project.html_url}
                 target="_blank"
               >
                 {project.name}
-              </a>
+              </Link>
               <p className="projectLang">{project.language}</p>
               <p className="projectDesc">{project.description}</p>
             </div>

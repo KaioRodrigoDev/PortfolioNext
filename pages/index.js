@@ -1,12 +1,20 @@
+import Link from 'next/link'
 import {
   AiOutlineInstagram,
   AiFillGithub,
   AiOutlineLinkedin
 } from 'react-icons/ai'
 
-import Link from 'next/link'
+export async function getStaticProps() {
+  const data = await fetch('https://api.github.com/users/KaioRodrigoDev/repos')
+  const projects = await data.json()
 
-export default function Home() {
+  return {
+    props: { projects }
+  }
+}
+
+export default function Home({ projects }) {
   return (
     <body>
       <div>
@@ -24,20 +32,17 @@ export default function Home() {
               </p>
               <p id="resume">Redes Sociais:</p>
               <div className="headerIcon">
-                <a
-                  href="https://www.linkedin.com/in/kaio-rodrigo-8392a421a/"
-                  target="_blank"
-                >
+                <a href="https://www.linkedin.com/in/kaio-rodrigo-8392a421a/">
                   <span>
                     <AiOutlineInstagram className="iconSocial" />
                   </span>
                 </a>
-                <a href="https://github.com/KaioRodrigoDev" target="_blank">
+                <a href="https://github.com/KaioRodrigoDev">
                   <span>
                     <AiFillGithub className="iconSocial" />
                   </span>
                 </a>
-                <a href="https://instagram.com/kaio_dev" target="_blank">
+                <a href="https://instagram.com/kaio_dev">
                   <span>
                     <AiOutlineLinkedin className="iconSocial" />
                   </span>
@@ -47,7 +52,7 @@ export default function Home() {
             </div>
             <img
               className="Perfil_photo"
-              src="https://avatars.githubusercontent.com/u/79218424?v=4"
+              src={projects.avatar_url}
               width="20%"
               height="20%"
               alt="Perfil_photo"
