@@ -28,9 +28,9 @@ export default function Project({ projects }) {
           ))}
         </div>
         <div className="btnBack">
-          <Link className="btnPrimary" href="/">
+          <a className="btnPrimary" href="/">
             Voltar
-          </Link>
+          </a>
         </div>
       </main>
     </>

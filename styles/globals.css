@@ -15,12 +15,13 @@
   font-family: 'Fredoka', sans-serif;
   box-sizing: border-box;
   color: var(--cor-secundaria);
+  text-decoration: none;
 }
 .headerIcon {
   padding-top: 10px;
 }
-.headerIcon a,
-.links a {
+.headerIcon Link,
+.links Link {
   text-decoration: none;
   transition: 0.7s;
 }

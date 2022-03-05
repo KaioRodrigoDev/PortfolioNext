@@ -6,7 +6,7 @@ import {
 } from 'react-icons/ai'
 
 export async function getStaticProps() {
-  const data = await fetch('https://api.github.com/users/KaioRodrigoDev/repos')
+  const data = await fetch('https://api.github.com/users/KaioRodrigoDev')
   const projects = await data.json()
 
   return {
@@ -57,7 +57,6 @@ export default function Home({ projects }) {
               height="20%"
               alt="Perfil_photo"
             />
-            <input id="cor" type="color" />
           </div>
           <br />
           <a
@@ -67,9 +66,9 @@ export default function Home({ projects }) {
           >
             Curriculum
           </a>
-          <Link className="btn btnSecont" href="/projects">
+          <a className="btn btnSecont" href="/projects">
             Projetos
-          </Link>
+          </a>
           <hr className="linha" />
           <h2 className="ido title">Sobre mim</h2>
           <br />
