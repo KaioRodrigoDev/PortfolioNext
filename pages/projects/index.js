@@ -20,7 +20,7 @@ export default function Project({ projects }) {
                 href={project.html_url}
                 target="_blank"
               >
-                {project.name}
+                <p className="projectTitle">{project.name}</p>
               </Link>
               <p className="projectLang">{project.language}</p>
               <p className="projectDesc">{project.description}</p>
@@ -28,9 +28,9 @@ export default function Project({ projects }) {
           ))}
         </div>
         <div className="btnBack">
-          <a className="btnPrimary" href="/">
-            Voltar
-          </a>
+          <Link href="/">
+            <a className="btnPrimary">Voltar</a>
+          </Link>
         </div>
       </main>
     </>

@@ -66,9 +66,9 @@ export default function Home({ projects }) {
           >
             Curriculum
           </a>
-          <a className="btn btnSecont" href="/projects">
-            Projetos
-          </a>
+          <Link href="/projects">
+            <a className="btn btnSecont">Projetos</a>
+          </Link>
           <hr className="linha" />
           <h2 className="ido title">Sobre mim</h2>
           <br />
