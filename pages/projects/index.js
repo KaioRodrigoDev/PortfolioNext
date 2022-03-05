@@ -14,7 +14,7 @@ export default function Project({ projects }) {
         <h1 className="title titleProjects">Projetos</h1>
         <div className="projectsList">
           {projects.map(project => (
-            <div className="projects">
+            <div className="projects" key={project.id}>
               <Link
                 className="projectTitle"
                 href={project.html_url}
