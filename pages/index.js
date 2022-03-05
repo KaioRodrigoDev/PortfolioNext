@@ -51,6 +51,7 @@ export default function Home() {
               height="20%"
               alt="Perfil_photo"
             />
+            <input id="cor" type="color" />
           </div>
           <br />
           <a
