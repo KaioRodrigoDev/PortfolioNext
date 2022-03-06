@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Fredoka&display=swap');
 
 :root {
-  --cor-principal: #ff002b;
+  --cor-principal: #ff0000;
   --cor-secundaria: #ddd;
   --cor-background-main: #070707;
   --cor-background-body: #121212;
@@ -190,4 +190,22 @@ main div.NavHeader {
   padding-top: 30px;
   display: flex;
   justify-content: center;
+}
+
+#inputColor::after {
+  background-color: value;
+}
+.ImageColor {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+#perfilPhoto {
+  width: 100%;
+  height: 100%;
+}
+#inputColor {
+  margin-top: 30px;
+  width: 50%;
 }

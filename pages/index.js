@@ -15,6 +15,24 @@ export async function getStaticProps() {
 }
 
 export default function Home({ projects }) {
+  // function onChange(h2) {
+  //   console.log(h2)
+  //   h2.style.backgroundColor = '#000000'
+  // }
+
+  function Cor(cor) {
+    const h2 = document.querySelectorAll('.inputColor')
+    h2.forEach(titulo => {
+      titulo.style.color = cor
+      titulo.style.textShadow = `0 0 0.5rem ${cor}`
+      if (titulo.id == 'perfilPhoto') {
+        titulo.style.boxShadow = `0 0 1rem ${cor}`
+      }
+      if (titulo.id == 'cur') {
+        titulo.onMouseOver = `0 0 1rem ${cor}`
+      }
+    })
+  }
   return (
     <body>
       <div>
@@ -22,7 +40,8 @@ export default function Home({ projects }) {
           <div className="NavHeader">
             <div>
               <h2 id="name1">
-                Olá, meu nome é <span className="title"> Kaio Rodrigo</span>
+                Olá, meu nome é{' '}
+                <span className="title inputColor"> Kaio Rodrigo</span>
               </h2>
               <h4>Programador Front-end Junior</h4>
               <p id="resume">
@@ -33,36 +52,48 @@ export default function Home({ projects }) {
               <p id="resume">Redes Sociais:</p>
               <div className="headerIcon">
                 <a href="https://www.linkedin.com/in/kaio-rodrigo-8392a421a/">
-                  <span>
+                  <span className="inputColor" id="span">
                     <AiOutlineInstagram className="iconSocial" />
                   </span>
                 </a>
                 <a href="https://github.com/KaioRodrigoDev">
-                  <span>
-                    <AiFillGithub className="iconSocial" />
+                  <span className="inputColor">
+                    <AiFillGithub className="iconSocial " />
                   </span>
                 </a>
                 <a href="https://instagram.com/kaio_dev">
-                  <span>
+                  <span className="inputColor">
                     <AiOutlineLinkedin className="iconSocial" />
                   </span>
                 </a>
               </div>
               <br />
             </div>
-            <img
-              className="Perfil_photo"
-              src={projects.avatar_url}
-              width="20%"
-              height="20%"
-              alt="Perfil_photo"
-            />
+            <div className="ImageColor">
+              <img
+                id="perfilPhoto"
+                className="Perfil_photo inputColor"
+                src={projects.avatar_url}
+                width="20%"
+                height="20%"
+                alt="Perfil_photo"
+              />
+
+              <input
+                type="color"
+                id="inputColor"
+                onChange={() => Cor(event.target.value)}
+                className="inputColor"
+                alt="inputColor"
+              />
+            </div>
           </div>
           <br />
           <a
             className="btn btnPrimary"
             target="blank"
             href="https://drive.google.com/file/d/1w8z5AxvtZi-cGld526KhBsfMxeqdTRpf/view?usp=sharing"
+            id="cur"
           >
             Curriculum
           </a>
@@ -70,7 +101,7 @@ export default function Home({ projects }) {
             <a className="btn btnSecont">Projetos</a>
           </Link>
           <hr className="linha" />
-          <h2 className="ido title">Sobre mim</h2>
+          <h2 className="ido title inputColor">Sobre mim</h2>
           <br />
           <p>
             Sou desenvolvedor de web e mobile focado no front-end. Tenho 18 anos
@@ -86,7 +117,7 @@ export default function Home({ projects }) {
           <br />
           <section>
             <div className="boxes">
-              <h3 className="title">PHP</h3>
+              <h3 className="title inputColor">PHP</h3>
               <br />
               <p>
                 Utilizo o PHP no framework Laravel, utilizado para
@@ -94,7 +125,7 @@ export default function Home({ projects }) {
               </p>
             </div>
             <div className="boxes">
-              <h3 className="title">JavaScript</h3>
+              <h3 className="title inputColor">JavaScript</h3>
               <br />
               <p>
                 JS é uma das três principais tecnologias da World Wide Web,
@@ -102,7 +133,7 @@ export default function Home({ projects }) {
               </p>
             </div>
             <div className="boxes">
-              <h3 className="title">React</h3>
+              <h3 className="title inputColor">React</h3>
               <br />
               <p>
                 O React é utilizado para tanto desenvolvimento Web quanto
@@ -110,7 +141,7 @@ export default function Home({ projects }) {
               </p>
             </div>
             <div className="boxes">
-              <h3 className="title">HTML e CSS</h3>
+              <h3 className="title inputColor">HTML e CSS</h3>
               <br />
               <p>
                 HTML e CSS são a base para desenvolvimento web, no qual sendo
