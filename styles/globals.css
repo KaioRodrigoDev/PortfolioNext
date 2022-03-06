@@ -49,10 +49,6 @@
   transition: 0.8s;
   border-radius: 10px;
 }
-.headerIcon a span:hover {
-  background-color: var(--cor-principal);
-  box-shadow: 0 0 1em var(--cor-principal);
-}
 
 body {
   background-color: var(--cor-background-body);
@@ -206,6 +202,6 @@ main div.NavHeader {
   height: 100%;
 }
 #inputColor {
-  margin-top: 30px;
+  margin-top: 10px;
   width: 50%;
 }

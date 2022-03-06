@@ -15,23 +15,31 @@ export async function getStaticProps() {
 }
 
 export default function Home({ projects }) {
-  // function onChange(h2) {
-  //   console.log(h2)
-  //   h2.style.backgroundColor = '#000000'
-  // }
-
   function Cor(cor) {
     const h2 = document.querySelectorAll('.inputColor')
+    console.log(h2)
     h2.forEach(titulo => {
       titulo.style.color = cor
       titulo.style.textShadow = `0 0 0.5rem ${cor}`
       if (titulo.id == 'perfilPhoto') {
         titulo.style.boxShadow = `0 0 1rem ${cor}`
       }
-      if (titulo.id == 'cur') {
-        titulo.onMouseOver = `0 0 1rem ${cor}`
-      }
     })
+  }
+
+  function hover(id) {
+    const hover = document.getElementById(id)
+    const input = document.getElementById('inputColor')
+    const cor = input.value
+    hover.style.backgroundColor = cor
+    hover.style.boxShadow = `0 0 0.5rem ${cor}`
+  }
+  function unhover(id) {
+    const unhover = document.getElementById(id)
+    const input = document.getElementById('inputColor')
+    const cor = input.value
+    unhover.style.backgroundColor = '#212428'
+    unhover.style.boxShadow = `0 0 0rem ${cor}`
   }
   return (
     <body>
@@ -52,17 +60,32 @@ export default function Home({ projects }) {
               <p id="resume">Redes Sociais:</p>
               <div className="headerIcon">
                 <a href="https://www.linkedin.com/in/kaio-rodrigo-8392a421a/">
-                  <span className="inputColor" id="span">
+                  <span
+                    onMouseOver={() => hover('Insta')}
+                    onMouseOut={() => unhover('Insta')}
+                    className="inputColor "
+                    id="Insta"
+                  >
                     <AiOutlineInstagram className="iconSocial" />
                   </span>
                 </a>
                 <a href="https://github.com/KaioRodrigoDev">
-                  <span className="inputColor">
+                  <span
+                    onMouseOver={() => hover('Git')}
+                    onMouseOut={() => unhover('Git')}
+                    className="inputColor"
+                    id="Git"
+                  >
                     <AiFillGithub className="iconSocial " />
                   </span>
                 </a>
                 <a href="https://instagram.com/kaio_dev">
-                  <span className="inputColor">
+                  <span
+                    onMouseOver={() => hover('Linkedin')}
+                    onMouseOut={() => unhover('Linkedin')}
+                    className="inputColor"
+                    id="Linkedin"
+                  >
                     <AiOutlineLinkedin className="iconSocial" />
                   </span>
                 </a>
@@ -91,6 +114,8 @@ export default function Home({ projects }) {
           <br />
           <a
             className="btn btnPrimary"
+            onMouseOver={() => hover('cur')}
+            onMouseOut={() => unhover('cur')}
             target="blank"
             href="https://drive.google.com/file/d/1w8z5AxvtZi-cGld526KhBsfMxeqdTRpf/view?usp=sharing"
             id="cur"
@@ -98,7 +123,14 @@ export default function Home({ projects }) {
             Curriculum
           </a>
           <Link href="/projects">
-            <a className="btn btnSecont">Projetos</a>
+            <a
+              onMouseOver={() => hover('project')}
+              onMouseOut={() => unhover('project')}
+              className="btn btnSecont"
+              id="project"
+            >
+              Projetos
+            </a>
           </Link>
           <hr className="linha" />
           <h2 className="ido title inputColor">Sobre mim</h2>
