@@ -54,7 +54,8 @@ export default function Home({ projects }) {
     window.location.href = '/projects'
   }
   function handleClick1() {
-    window.location.href = '/404'
+    window.location.href =
+      'https://drive.google.com/file/d/1w8z5AxvtZi-cGld526KhBsfMxeqdTRpf/view'
   }
   return (
     <body>
