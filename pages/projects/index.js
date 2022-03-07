@@ -12,9 +12,9 @@ export default function Project({ projects }) {
     <>
       <main className="main">
         <h1 className="title titleProjects">Projetos</h1>
-        <div className="projectsList">
+        <div className="projectsList ">
           {projects.map(project => (
-            <div className="projects" key={project.id}>
+            <div className="projects card-project" key={project.id}>
               <Link
                 className="projectTitle"
                 href={project.html_url}
@@ -22,7 +22,7 @@ export default function Project({ projects }) {
               >
                 <p className="projectTitle">{project.name}</p>
               </Link>
-              <p className="projectLang">{project.language}</p>
+              <p className="projectLang card-lang">{project.language}</p>
               <p className="projectDesc">{project.description}</p>
             </div>
           ))}
