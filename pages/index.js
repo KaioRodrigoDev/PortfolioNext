@@ -85,7 +85,7 @@ export default function Home({ projects }) {
               </div>
               <p id="resume">Redes Sociais:</p>
               <div className="headerIcon">
-                <a href="https://www.linkedin.com/in/kaio-rodrigo-8392a421a/">
+                <a href="https://instagram.com/kaio_dev">
                   <span
                     onMouseOver={() => hover('Insta')}
                     onMouseOut={() => unhover('Insta')}
@@ -105,7 +105,7 @@ export default function Home({ projects }) {
                     <AiFillGithub className="iconSocial " />
                   </span>
                 </a>
-                <a href="https://instagram.com/kaio_dev">
+                <a href="https://www.linkedin.com/in/kaio-rodrigo-8392a421a/">
                   <span
                     onMouseOver={() => hover('Linkedin')}
                     onMouseOut={() => unhover('Linkedin')}
