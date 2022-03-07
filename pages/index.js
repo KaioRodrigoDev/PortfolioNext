@@ -48,7 +48,7 @@ export default function Home({ projects }) {
           <div className="NavHeader">
             <div>
               <h2 id="name1">
-                Olá, meu nome é{' '}
+                Olá, meu nome é
                 <span className="title inputColor"> Kaio Rodrigo</span>
               </h2>
               <h4>Programador Front-end Junior</h4>
@@ -101,7 +101,7 @@ export default function Home({ projects }) {
                 height="20%"
                 alt="Perfil_photo"
               />
-
+              <p id="colorname">Mude a cor:</p>
               <input
                 type="color"
                 id="inputColor"
