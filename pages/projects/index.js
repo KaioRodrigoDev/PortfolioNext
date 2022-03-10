@@ -20,7 +20,7 @@ export default function Project({ projects }) {
                 href={project.html_url}
                 target="_blank"
               >
-                <p className="projectTitle">{project.name}</p>
+                <a className="projectTitle">{project.name}</a>
               </Link>
               <p className="projectLang card-lang">{project.language}</p>
               <p className="projectDesc">{project.description}</p>
