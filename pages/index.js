@@ -173,7 +173,10 @@ export default function Home({ projects }) {
             tecnologias que utilizo. Se quiser ver mais sobre minhas
             experiencias pode olhar meu{' '}
             <span>
-              <a className="title" href="https://github.com/KaioRodrigoDev">
+              <a
+                className="title inputColor"
+                href="https://github.com/KaioRodrigoDev"
+              >
                 Github
               </a>
             </span>
