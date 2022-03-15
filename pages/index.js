@@ -71,7 +71,7 @@ export default function Home({ projects }) {
               <p id="resume">
                 Eu programo para desenvolver soluções, onde a experiencia do
                 usuario é completamente planjada e arquitetada para a melhor
-                usabilidade e aconchego
+                usabilidade e aconchego.
               </p>
               <div className="card">
                 <p className="text-color-show">Escolha sua cor favorita!</p>
@@ -146,7 +146,7 @@ export default function Home({ projects }) {
               target="_blank"
               id="cur"
             >
-              Curriculum
+              Currículo
             </button>
 
             <button
@@ -170,8 +170,18 @@ export default function Home({ projects }) {
             cada vez mais, e trabalho em grupo nunca é demais. Possuo 1 ano de
             experiencia desenvolvendo sites e apps para várias empresas e
             clientes. Abaixo há um pequeno resumo sobre minhas habilidades e
-            tecnologias que eu utilizo. Se quiser ver mais sobre minhas
-            experiencias olha meu Github.
+            tecnologias que utilizo. Se quiser ver mais sobre minhas
+            experiencias pode olhar meu{' '}
+            <span>
+              <a
+                className="title "
+                target="_blank"
+                href="https://github.com/KaioRodrigoDev"
+              >
+                Github
+              </a>
+            </span>
+            .
           </p>
           <br />
           <section className="card">
@@ -188,14 +198,14 @@ export default function Home({ projects }) {
               <br />
               <p>
                 JS é uma das três principais tecnologias da World Wide Web,
-                junto com HTML e CSS
+                junto com HTML e CSS.
               </p>
             </div>
             <div className="boxes">
               <h3 className="title inputColor">React</h3>
               <br />
               <p>
-                O React é utilizado para tanto desenvolvimento Web quanto
+                O React é utilizado tanto para desenvolvimento Web quanto
                 Mobile. Dando assim uma grande liberdade para seu uso.
               </p>
             </div>
@@ -204,7 +214,7 @@ export default function Home({ projects }) {
               <br />
               <p>
                 HTML e CSS são a base para desenvolvimento web, no qual sendo
-                necessario para aprender a base para outras linguagens.
+                necessário para aprender a base de outras linguagens.
               </p>
             </div>
           </section>

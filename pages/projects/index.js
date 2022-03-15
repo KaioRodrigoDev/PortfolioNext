@@ -12,11 +12,13 @@ export default function Project({ projects }) {
     <>
       <main className="main">
         <h1 className="title titleProjects">Projetos</h1>
+        <p className="titleProjects">Clique nos projetos para ver detalhes</p>
+
         <div className="projectsList ">
           {projects.map(project => (
             <div className="projects card-project" key={project.id}>
               <Link
-                className="projectTitle"
+                className="projectTitle "
                 href={project.html_url}
                 target="_blank"
               >
