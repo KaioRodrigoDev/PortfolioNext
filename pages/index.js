@@ -193,8 +193,8 @@ export default function Home({ projects }) {
               <h3 className="title inputColor">JavaScript</h3>
               <br />
               <p>
-                JS é uma das três principais tecnologias da World Wide Web,
-                junto com HTML e CSS.
+                JS pode ser utilizada em varios frameworks, os que mais utilizo
+                sao Next, ReactJs, React Native.
               </p>
             </div>
             <div className="boxes">
