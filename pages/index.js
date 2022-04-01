@@ -30,11 +30,11 @@ export default function Home({ projects }) {
 
   function hover(id) {
     const hover = document.getElementById(id)
-    const input = document.getElementById('inputColor')
+    const input = document.getElementById('inputColor2')
 
     const cor = input.value
-    if (cor == '#000000') {
-      const input2 = document.getElementById('inputColor2')
+    if (cor == '#f50000') {
+      const input2 = document.getElementById('inputColor')
       const cor2 = input2.value
       hover.style.backgroundColor = cor2
       hover.style.boxShadow = `0 0 0.5rem ${cor2}`
@@ -81,6 +81,7 @@ export default function Home({ projects }) {
                   className="inputColorShow"
                   onChange={() => Cor(event.target.value)}
                   alt="inputColor"
+                  defaultValue="#F50000"
                 />
               </div>
               <p id="resume">Redes Sociais:</p>
@@ -133,6 +134,7 @@ export default function Home({ projects }) {
                 onChange={() => Cor(event.target.value)}
                 className="inputColor inputColorNone"
                 alt="inputColor"
+                defaultValue="#F50000"
               />
             </div>
           </div>
