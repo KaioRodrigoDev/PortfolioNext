@@ -67,7 +67,7 @@ export default function Home({ projects }) {
                 Olá, meu nome é
                 <span className="title inputColor"> Kaio Rodrigo</span>
               </h2>
-              <h4>Programador Front-end Junior</h4>
+              <h4>Programador Front-end</h4>
               <p id="resume">
                 Eu programo para desenvolver soluções, onde a experiencia do
                 usuario é completamente planjada e arquitetada para a melhor
@@ -169,9 +169,9 @@ export default function Home({ projects }) {
           <p className="bio">
             Sou desenvolvedor de web e mobile focado no front-end. Tenho 18 anos
             e estudo programação a 3 anos. Novos desafios me permitem aprender
-            cada vez mais, e trabalho em grupo nunca é demais. Possuo 1 ano de
-            experiencia desenvolvendo sites e apps para várias empresas e
-            clientes. Abaixo há um pequeno resumo sobre minhas habilidades e
+            cada vez mais, e trabalho em grupo nunca é demais. Possuo 1 ano e
+            meio de experiencia desenvolvendo sites e apps para várias empresas
+            e clientes. Abaixo há um pequeno resumo sobre minhas habilidades e
             tecnologias que utilizo. Se quiser ver mais sobre minhas
             experiencias pode olhar meu{' '}
             <span>
