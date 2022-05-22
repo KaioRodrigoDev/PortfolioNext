@@ -1,0 +1,13 @@
+{
+  "_cts": {
+    "Portfolio": {}
+  },
+  "slices": {
+    "Project": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Test": {}
+  }
+}
