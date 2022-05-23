@@ -5,11 +5,22 @@
   "status": true,
   "json": {
     "Main": {
-      "Numero": {
-        "type": "Number",
+      "Titulo": {
+        "type": "StructuredText",
         "config": {
-          "label": "Numero",
-          "placeholder": ""
+          "label": "Titulo",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "Desc": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Desc",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       }
     }
