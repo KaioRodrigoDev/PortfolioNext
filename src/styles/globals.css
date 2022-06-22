@@ -267,6 +267,40 @@ main div.NavHeader {
   }
 }
 
+.project {
+  display: flex;
+}
+.imageProject{
+  width: 60%;
+}
+
+.Single-lang{
+  
+  font-size: 13px;
+  margin-right: 8px;
+}
+
+.Single-title{
+  padding-bottom: 10px;
+}
+
+.Single-Description{
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Single-Func{
+  font-size: 15px;
+}
+
+.Single-image{
+  width: 90%;
+}
+.Single-div{
+  width: 40%;
+}
+
 @media (max-width: 950px) {
   .card-project {
     width: 100%;

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { getAllProjects } from '../../lib/dato'
-export default function Project() {
+export default function Projects() {
   const [projects, setProjects] = useState([])
 
   useEffect(() => {
@@ -21,12 +21,14 @@ export default function Project() {
             <div className="projects card-project" key={project?.id}>
               <Link
                 className="projectTitle"
-                href={`${project?.link}`}
+                href={`/projetos/${project?.id}`}
                 target="_blank"
               >
                 <a className="projectTitle">{project?.title}</a>
               </Link>
-              <p className="projectLang card-lang">{project?.language}</p>
+              <p className="projectLang card-lang">
+                {project?.lang?.[0]?.name}
+              </p>
               <p className="projectDesc">{project?.description}</p>
             </div>
           ))}

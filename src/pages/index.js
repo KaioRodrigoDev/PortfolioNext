@@ -51,7 +51,7 @@ export default function Home({ projects }) {
     unhover.style.boxShadow = `0 0 0rem ${cor}`
   }
   function handleClick2() {
-    window.location.href = '/projects'
+    window.location.href = '/projetos'
   }
   function handleClick1() {
     window.location.href =

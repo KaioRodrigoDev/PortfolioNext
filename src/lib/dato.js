@@ -28,12 +28,45 @@ export async function getAllProjects() {
   {
   allProjetos {
     id
-    languages
+    lang {
+      name
+    }
     title
     description
+    photo {
+      url
+    }
   }
 }
   `)
 
   return data.allProjetos
+}
+
+export async function getProject(id) {
+  const data = await AXIOSCmsAPI(`
+  
+  {
+    projeto(filter: {id: {in: "${id}"}}) {
+      id
+      link
+      title
+      description
+      lang {
+        name
+      }
+      photo {
+        url
+      }
+      video {
+        url
+      }
+      funcionalidade {
+        name
+      }
+    }
+  }
+  `)
+
+  return data.projeto
 }
