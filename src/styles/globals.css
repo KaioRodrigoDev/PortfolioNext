@@ -166,7 +166,8 @@ section {
   border: #ff014e 1px solid;
   border-radius: 10px;
   width: max-content;
-  padding: 0px 7px 0px 7px;
+  padding: 0px 8px 0px 8px;
+  margin-top: 10px;
 }
 
 .projectDesc {
@@ -301,6 +302,13 @@ main div.NavHeader {
   width: 40%;
 }
 
+.Single-button{
+  margin-top: 40px;
+  width: 100%;
+  cursor: pointer;
+}
+
+
 @media (max-width: 950px) {
   .card-project {
     width: 100%;
@@ -309,7 +317,7 @@ main div.NavHeader {
     text-align: center;
   }
   .card-lang {
-    margin: 10px auto;
+    margin-top: 10px;
   }
 }
 .button {

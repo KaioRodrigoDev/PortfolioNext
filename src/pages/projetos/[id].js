@@ -39,6 +39,9 @@ export default function Project() {
               <p className="Single-Func">• {item.name}</p>
             ))}
           </div>
+          <a href={project?.link} target={'_blank'}>
+            <button className="Single-button">Acessar Projeto</button>
+          </a>
         </div>
       </main>
     </>
