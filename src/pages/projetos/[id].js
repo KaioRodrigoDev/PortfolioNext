@@ -44,7 +44,7 @@ export default function Project() {
               </p>
             ))}
           </div>
-          <a href={project?.link} target="_blank">
+          <a href={project?.link} target="_blank" rel="noreferrer">
             <button className="Single-button">Acessar Projeto</button>
           </a>
         </div>
