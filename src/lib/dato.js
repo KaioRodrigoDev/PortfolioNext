@@ -58,9 +58,7 @@ export async function getProject(id) {
       photo {
         url
       }
-      video {
-        url
-      }
+      
       funcionalidade {
         name
       }
