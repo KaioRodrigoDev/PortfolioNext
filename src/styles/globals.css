@@ -308,6 +308,21 @@ main div.NavHeader {
   cursor: pointer;
 }
 
+@media (max-width: 950px) {
+ .project{
+  display: block;
+ }
+ .imageProject{
+  width: 100%;
+}
+.Single-image{
+  width: 100%;
+}
+.Single-div{
+  margin-top: 2rem;
+  width: 100%;
+}
+}
 
 @media (max-width: 950px) {
   .card-project {
