@@ -17,10 +17,7 @@ export default function Project() {
     <>
       <main className="main project">
         <div className="imageProject">
-          <img
-            src="https://github.com/KaioRodrigoDev/LaravelProject/raw/main/public/img/HDCEvents.gif"
-            className="Single-image"
-          />
+          <img src={project?.photo?.[0]?.url} className="Single-image" />
         </div>
         <div className="Single-div">
           <h1 className="Single-title">{project?.title}</h1>
