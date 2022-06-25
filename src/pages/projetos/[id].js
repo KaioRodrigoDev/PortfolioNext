@@ -26,7 +26,10 @@ export default function Project() {
           <h1 className="Single-title">{project?.title}</h1>
           <div>
             {project?.lang?.map(item => (
-              <span className="projectLang card-lang Single-lang ">
+              <span
+                className="projectLang card-lang Single-lang "
+                key={item.name}
+              >
                 {item.name}
               </span>
             ))}
@@ -36,7 +39,9 @@ export default function Project() {
           </div>
           <div>
             {project?.funcionalidade?.map(item => (
-              <p className="Single-Func">• {item.name}</p>
+              <p className="Single-Func" key={item.name}>
+                • {item.name}
+              </p>
             ))}
           </div>
           <a href={project?.link} target={'_blank'}>
