@@ -296,7 +296,8 @@ main div.NavHeader {
 }
 
 .Single-image{
-  width: 90%;
+  max-width: 90%;
+  max-height: 50vh;
 }
 .Single-div{
   width: 40%;
