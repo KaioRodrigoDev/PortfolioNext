@@ -55,7 +55,7 @@ export default function Home({ projects }) {
   }
   function handleClick1() {
     window.location.href =
-      'https://drive.google.com/file/d/1w8z5AxvtZi-cGld526KhBsfMxeqdTRpf/view'
+      'https://drive.google.com/file/d/1B1OPIf-LQjdHHALJwa_6wkjGjOUfh6S6/view?usp=share_link'
   }
   return (
     <body>
